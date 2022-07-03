@@ -1,0 +1,29 @@
+#Le jeu du juste prix 
+#Troisiemme text
+
+start=str(input("Bienvenu dans le jeu du juste prix !"))
+print("Tapez ok pour commencé ")
+
+while start != "ok":
+    start=str(input("Bienvenu dans le jeu du juste prix ! "))
+            
+import random  
+
+n=random.randint (0,500)
+choix_joueur = 0
+
+n1 = int(input("Devinez un nombre : "))
+
+while n != n1:
+    
+    if n < n1:
+        print("C'est trop petit essaie encore  !")
+        n1 = int(input("Devinez un nombre : "))
+    
+    elif n > n1:
+        print("C'est trop  grand essaie encore  !")
+        n1 = int(input("Devinez un nombre : "))
+    
+else:
+    print(" Vous avez Gagné merci au revoir ")
+   
